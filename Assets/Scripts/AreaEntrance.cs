@@ -2,15 +2,12 @@ using UnityEngine;
 
 public class AreaEntrance : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField] private string transitionName;
+    private void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if(transitionName == SceneManagement.Instance.SceneTransitionName)
+        {
+            PlayerController.Instance.transform.position = transform.position;
+        }
     }
 }

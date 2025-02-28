@@ -1,16 +1,16 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AreaExit : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField] private string sceneToLoad;
+    [SerializeField] private string sceneTransitionName;
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if(collision.gameObject.GetComponent<PlayerController>())
+        {
+            SceneManager.LoadScene(sceneToLoad);
+            SceneManagement.Instance.SceneTransitionName = sceneTransitionName;
+        }
     }
 }
