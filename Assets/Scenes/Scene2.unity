@@ -313,7 +313,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -2
+  m_SortingOrder: -3
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -9124,6 +9124,75 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 58.05498, y: 23}
   m_EdgeRadius: 0
+--- !u!1001 &265317506
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1679006129328875284}
+    m_Modifications:
+    - target: {fileID: 458566491719099546, guid: 8050d3fdd7ed58b42b71c66d35462a38, type: 3}
+      propertyPath: ShapeModule.type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 458566491719099546, guid: 8050d3fdd7ed58b42b71c66d35462a38, type: 3}
+      propertyPath: ShapeModule.radius.value
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 458566491719099546, guid: 8050d3fdd7ed58b42b71c66d35462a38, type: 3}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2015535808397832296, guid: 8050d3fdd7ed58b42b71c66d35462a38, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2015535808397832296, guid: 8050d3fdd7ed58b42b71c66d35462a38, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 2015535808397832296, guid: 8050d3fdd7ed58b42b71c66d35462a38, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2015535808397832296, guid: 8050d3fdd7ed58b42b71c66d35462a38, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2015535808397832296, guid: 8050d3fdd7ed58b42b71c66d35462a38, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2015535808397832296, guid: 8050d3fdd7ed58b42b71c66d35462a38, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2015535808397832296, guid: 8050d3fdd7ed58b42b71c66d35462a38, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2015535808397832296, guid: 8050d3fdd7ed58b42b71c66d35462a38, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2015535808397832296, guid: 8050d3fdd7ed58b42b71c66d35462a38, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2015535808397832296, guid: 8050d3fdd7ed58b42b71c66d35462a38, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7083868626939430062, guid: 8050d3fdd7ed58b42b71c66d35462a38, type: 3}
+      propertyPath: m_Name
+      value: PortalVFX
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8050d3fdd7ed58b42b71c66d35462a38, type: 3}
 --- !u!1 &321833149
 GameObject:
   m_ObjectHideFlags: 0
@@ -9239,7 +9308,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -10770,6 +10839,11 @@ Transform:
   - {fileID: 1847588228}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &441079548 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2015535808397832296, guid: 8050d3fdd7ed58b42b71c66d35462a38, type: 3}
+  m_PrefabInstance: {fileID: 265317506}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &479369316
 GameObject:
   m_ObjectHideFlags: 0
@@ -10830,7 +10904,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: ddc4c80039acb124c96e5fc67dced722, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -10850,12 +10924,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 479369316}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.06, y: 1.1, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.069999695, y: -0.94000006, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1679006129328875284}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
 GameObject:
@@ -11276,13 +11350,13 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 5.398576, y: 20.662092}
-      - {x: -30.791925, y: 20.83369}
-      - {x: -30.98247, y: 20.893364}
-      - {x: -30.776447, y: 20.724586}
-      - {x: -30.725128, y: -18.522594}
-      - {x: 30.984106, y: -18.238094}
-      - {x: 31.515356, y: 20.848953}
+    - - {x: 13.133888, y: 10.090961}
+      - {x: 0.1197989, y: 10.010593}
+      - {x: -25.815207, y: 10.349402}
+      - {x: -25.69361, y: -13.541037}
+      - {x: -25.499971, y: -13.420383}
+      - {x: 20.15279, y: -12.189438}
+      - {x: 20.26204, y: 9.947303}
   m_UseDelaunayMesh: 0
 --- !u!1001 &716574527
 PrefabInstance:
@@ -12086,7 +12160,7 @@ Transform:
   m_GameObject: {fileID: 1308296929}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.59, y: 1.68, z: 0}
+  m_LocalPosition: {x: -8.94, y: 1.91, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -12464,7 +12538,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: -2
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -17405,6 +17479,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5385995262112290420}
+  - {fileID: 479369318}
+  - {fileID: 441079548}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3046731519661418845
@@ -17494,5 +17570,4 @@ SceneRoots:
   - {fileID: 2088014744}
   - {fileID: 1679006129328875284}
   - {fileID: 358169116}
-  - {fileID: 479369318}
   - {fileID: 1667281181}
