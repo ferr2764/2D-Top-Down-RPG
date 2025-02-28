@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 1202857380321928004}
   - component: {fileID: 7664382461038040197}
   - component: {fileID: 540939149303668605}
+  - component: {fileID: 2175641292364620745}
+  - component: {fileID: 3936940014227188732}
   m_Layer: 0
   m_Name: Tree (1)
   m_TagString: Untagged
@@ -77,12 +79,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c2156d85f23588f4f8cef5fee0ad1750, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 83e93213ce59e6940928a6f2cc85aa15, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 3, y: 4}
+  m_Size: {x: 0.23, y: 0.42}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -122,6 +124,56 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.04, y: -0.07}
-  m_Size: {x: 1.3, y: 1.24}
+  m_Offset: {x: 0.040000085, y: -0.008319026}
+  m_Size: {x: 0.82712173, y: 0.47928047}
   m_Direction: 1
+--- !u!58 &2175641292364620745
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6049895174741201394}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.012018204, y: 1.3243967}
+  m_Radius: 0.7764853
+--- !u!114 &3936940014227188732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6049895174741201394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8970caa66052fe44c9426c6eec6bdc42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transparencyAmount: 0.9
+  fadeTime: 0.4

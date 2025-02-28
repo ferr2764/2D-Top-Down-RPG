@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 8895098745307973705}
   - component: {fileID: 2075017120074415491}
   - component: {fileID: 6813380523323240036}
+  - component: {fileID: -5771664016461874106}
+  - component: {fileID: 2062652967611169894}
   m_Layer: 0
   m_Name: Tree
   m_TagString: Untagged
@@ -77,7 +79,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c2156d85f23588f4f8cef5fee0ad1750, type: 3}
+  m_Sprite: {fileID: 21300000, guid: abee2967b6235874883b0c9cc27ea99e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -122,6 +124,56 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -0.18}
-  m_Size: {x: 1, y: 0.8}
+  m_Offset: {x: 0.014954693, y: 0.036844734}
+  m_Size: {x: 1.3308979, y: 0.82991624}
   m_Direction: 1
+--- !u!58 &-5771664016461874106
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7712835572074677210}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 1.7533274}
+  m_Radius: 1.4466727
+--- !u!114 &2062652967611169894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7712835572074677210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8970caa66052fe44c9426c6eec6bdc42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transparencyAmount: 0.9
+  fadeTime: 0.4

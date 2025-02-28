@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3564581377027291376}
   - component: {fileID: 4265990565126572447}
   - component: {fileID: 1661667328737193736}
+  - component: {fileID: -1786763380925674235}
   m_Layer: 0
   m_Name: Bush
   m_TagString: Untagged
@@ -77,8 +78,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: edceaac3f5f13bf439b4d8ac96f319e3, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: ddc4c80039acb124c96e5fc67dced722, type: 3}
+  m_Color: {r: 0.27450982, g: 0.5686275, b: 0.23529413, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -125,3 +126,16 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1, y: 1}
   m_Direction: 0
+--- !u!114 &-1786763380925674235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8345967707473287545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edd11ecf79d56084ea3197aa214813c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyVFX: {fileID: 1089062484730611471, guid: 769c1665a46c08448890e124664400d5, type: 3}
