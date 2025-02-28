@@ -69,11 +69,11 @@ public class Sword : MonoBehaviour
     {
         yield return new WaitForSeconds(swordAttackCD);
         isAttacking = false;
+        weaponCollider.gameObject.SetActive(false); //Move here to stop damage source right after a swing
     }
 
     public void DoneAttackingAnimEvent()
     {
-        weaponCollider.gameObject.SetActive(false);
     }
 
     public void SwingUpFlipAnim()
