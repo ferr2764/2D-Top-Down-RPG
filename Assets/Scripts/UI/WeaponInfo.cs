@@ -1,5 +1,5 @@
 using UnityEngine;
-[CreateAssetMenu(menuName = "New Weapon")]
+[CreateAssetMenu(menuName = "New weapon")]
 public class WeaponInfo : ScriptableObject
 {
     public GameObject weaponPrefab;

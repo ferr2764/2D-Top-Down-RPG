@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class ActiveWeapon : Singleton<ActiveWeapon>
 {
-    [SerializeField] private MonoBehaviour currentWeapon;
+    public MonoBehaviour CurrentWeapon { get; set; }
     private PlayerControls playerControls;
     private bool attackButtonDown, isAttacking = false;
     protected override void Awake()
@@ -30,7 +30,7 @@ public class ActiveWeapon : Singleton<ActiveWeapon>
         if (attackButtonDown && !isAttacking)
         {
             isAttacking = true;
-            (currentWeapon as IWeapon).Attack();
+            (CurrentWeapon as IWeapon).Attack();
         }
     }
 
@@ -45,5 +45,15 @@ public class ActiveWeapon : Singleton<ActiveWeapon>
     public void StopAttacking()
     {
         attackButtonDown = false;
+    }
+
+    public void WeaponNull()
+    {
+        CurrentWeapon = null;
+    }
+
+    public void NewWeapon(MonoBehaviour monoBehaviour)
+    {
+        CurrentWeapon = monoBehaviour;
     }
 }

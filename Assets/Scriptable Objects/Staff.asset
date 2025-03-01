@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2289c3143c08812448303b0e2e86cdcd, type: 3}
   m_Name: Staff
   m_EditorClassIdentifier: 
-  weaponPrefab: {fileID: 0}
-  weaponCD: 0
+  weaponPrefab: {fileID: 7055373304061666683, guid: e498e1e9cde32404b8c15dbafe761df4, type: 3}
+  weaponCD: 0.6
