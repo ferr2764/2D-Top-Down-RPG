@@ -20,7 +20,6 @@ public class UIFade : Singleton<UIFade>
     {
         while (!Mathf.Approximately(fadeScreen.color.a, targetAlpha))
         {
-            Debug.Log("Run");
             float alpha = Mathf.MoveTowards(fadeScreen.color.a, targetAlpha, fadeSpeed * Time.deltaTime);
             fadeScreen.color = new Color(fadeScreen.color.r, fadeScreen.color.g, fadeScreen.color.b, alpha);
             yield return null;
