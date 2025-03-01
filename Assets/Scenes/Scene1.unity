@@ -17676,7 +17676,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0.5
+  m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
   m_ApplyToSortingLayers: 00000000
@@ -18646,7 +18646,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 2
   m_Sprite: {fileID: -75224854, guid: 478a100d121726e43b8030f7be703933, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -23291,6 +23291,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1932724312}
   - component: {fileID: 1932724313}
+  - component: {fileID: 1932724314}
   m_Layer: 0
   m_Name: Active Weapon
   m_TagString: Untagged
@@ -23324,6 +23325,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a634243d90a160a479704e2e78fdbe20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1932724314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1932724311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c152e26cf27bdc41b5f3e5dd2a30135, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &1938304094 stripped
