@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: c3238d59e2727434eac9526d1cdf4e67
+guid: 3ceca9f75e691ad459890785fa626d67
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4634418647378881802
-    second: Stamina Empty_0
+      213: -4080278737599844964
+    second: Gem_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -96,30 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Stamina Empty_0
+      name: Gem_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 3
-        width: 10
-        height: 10
+        x: 19
+        y: 13
+        width: 6
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a0de671a433c05040800000000000000
-      internalID: 4634418647378881802
+      spriteID: c9d28cc3b10ff57c0800000000000000
+      internalID: -4080278737599844964
       vertices: []
       indices: 
       edges: []
@@ -148,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Stamina Empty_0: 4634418647378881802
+      Gem_0: -4080278737599844964
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

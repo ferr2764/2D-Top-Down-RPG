@@ -687,11 +687,11 @@ PlayerSettings:
   captureStartupLogs: {}
   activeInputHandler: 2
   windowsGamepadBackendHint: 0
-  cloudProjectId: 
+  cloudProjectId: c8c8a399-c5eb-46b0-8dfa-53af4345cd84
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: 
-  organizationId: 
+  projectName: 2D-Top-Down-RPG 2025-03-05_23-15-23
+  organizationId: linhnhpse183865
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}

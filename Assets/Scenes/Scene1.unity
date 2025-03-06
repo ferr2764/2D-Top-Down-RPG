@@ -591,7 +591,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34d98b7274c88df498811b772d6f5098, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 1
 --- !u!1 &113302522
 GameObject:
   m_ObjectHideFlags: 0
@@ -652,6 +651,7 @@ GameObject:
   - component: {fileID: 117245048}
   - component: {fileID: 117245047}
   - component: {fileID: 117245049}
+  - component: {fileID: 117245050}
   m_Layer: 0
   m_Name: Foreground
   m_TagString: Untagged
@@ -6392,6 +6392,18 @@ TilemapCollider2D:
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
   m_UseDelaunayMesh: 0
+--- !u!114 &117245050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 117245040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3abbf1d3d36ec504a9177ccdd7d4d19b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &153767469
 PrefabInstance:
   m_ObjectHideFlags: 0

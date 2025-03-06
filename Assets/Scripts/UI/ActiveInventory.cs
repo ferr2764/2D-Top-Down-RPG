@@ -34,7 +34,7 @@ public class ActiveInventory : MonoBehaviour
     }
     private void ChangeActiveWeapon()
     {
-        var currentWeapon = ActiveWeapon.Instance.CurrentWeapon;
+        var currentWeapon = ActiveWeapon.Instance.CurrentActiveWeapon;
         if (currentWeapon != null)
         {
             Destroy(currentWeapon.gameObject);
