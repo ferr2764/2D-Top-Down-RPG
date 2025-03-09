@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4265990565126572447}
   - component: {fileID: 1852680919453272788}
   - component: {fileID: 8286754388407323299}
+  - component: {fileID: 6552745012320969292}
   m_Layer: 0
   m_Name: Crate 1
   m_TagString: Untagged
@@ -148,3 +149,16 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.5684433, y: 1.0363759}
   m_EdgeRadius: 0
+--- !u!114 &6552745012320969292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8345967707473287545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52493e7a557adcd4a88eb298074d5da6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goinCoinPrefab: {fileID: 1202032568429264218, guid: 7b998ef7231c9674f875404c38cdd6d9, type: 3}

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4265990565126572447}
   - component: {fileID: 1661667328737193736}
   - component: {fileID: 1852680919453272788}
+  - component: {fileID: -2038411059222981023}
   m_Layer: 0
   m_Name: Barret
   m_TagString: Untagged
@@ -139,3 +140,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destroyVFX: {fileID: 0}
+--- !u!114 &-2038411059222981023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8345967707473287545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52493e7a557adcd4a88eb298074d5da6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goinCoinPrefab: {fileID: 1202032568429264218, guid: 7b998ef7231c9674f875404c38cdd6d9, type: 3}

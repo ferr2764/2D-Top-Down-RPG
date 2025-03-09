@@ -18,6 +18,8 @@ GameObject:
   - component: {fileID: 8123371531428293913}
   - component: {fileID: 4823130757625946679}
   - component: {fileID: 3006259039022572960}
+  - component: {fileID: 494808607643666948}
+  - component: {fileID: 5671449719884715177}
   m_Layer: 0
   m_Name: Ghost
   m_TagString: Untagged
@@ -173,6 +175,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roamChangeDirFloat: 2
+  attackRange: 5
+  enemyType: {fileID: 494808607643666948}
+  attackCooldown: 2
+  stopMovingWhileAttacking: 1
 --- !u!114 &2460664589821398140
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -240,6 +246,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6e1f4ef5b5785f4c8108b62906bb7ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &494808607643666948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2596440061214685099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1daf631ec21f04448a0fdd09bbaa2335, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 6555666928909337175, guid: 9f07ddf818776b74bbd616ddb5cd6375, type: 3}
+  bulletMoveSpeed: 6
+  burstCount: 5
+  timeBetweenBursts: 0.3
+  restTime: 0.5
+--- !u!210 &5671449719884715177
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2596440061214685099}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_SortAtRoot: 0
 --- !u!1 &3527962050357810553
 GameObject:
   m_ObjectHideFlags: 0
