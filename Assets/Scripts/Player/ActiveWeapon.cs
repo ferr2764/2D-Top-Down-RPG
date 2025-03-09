@@ -43,14 +43,7 @@ public class ActiveWeapon : Singleton<ActiveWeapon>
         Attack();
     }
 
-    private void Attack()
-    {
-        if (attackButtonDown && !isAttacking)
-        {
-            AttackCooldown();
-            (CurrentActiveWeapon as IWeapon).Attack();
-        }
-    }
+    
     public void StartAttacking()
     {
         attackButtonDown = true;
@@ -58,6 +51,15 @@ public class ActiveWeapon : Singleton<ActiveWeapon>
     public void StopAttacking()
     {
         attackButtonDown = false;
+    }
+
+    private void Attack()
+    {
+        if (attackButtonDown && !isAttacking && CurrentActiveWeapon)
+        {
+            AttackCooldown();
+            (CurrentActiveWeapon as IWeapon).Attack();
+        }
     }
 
     public void WeaponNull()
