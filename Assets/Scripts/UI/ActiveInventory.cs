@@ -1,22 +1,26 @@
 using UnityEngine;
 
-public class ActiveInventory : MonoBehaviour
+public class ActiveInventory : Singleton<ActiveInventory>
 {
     private int activeIndex = 0;
     private PlayerControls playerControls;
     private void Start()
     {
         playerControls.Inventory.Keyboard.performed += control => ToggleActiveSlot((int)control.ReadValue<float>());
-
-        ToggleActiveHighlight(0);
     }
-    private void Awake()
+    protected override void Awake()
     {
+        base.Awake();
         playerControls = new PlayerControls();
     }
     private void OnEnable()
     {
         playerControls.Enable();
+    }
+
+    private void EquipStartingWeapon()
+    {
+        ToggleActiveHighlight(0);
     }
     private void ToggleActiveSlot(int value)
     {
@@ -51,9 +55,9 @@ public class ActiveInventory : MonoBehaviour
             return;
         }
 
-        GameObject newWeapon = Instantiate(weaponToSpawn, ActiveWeapon.Instance.transform.position, Quaternion.identity);
-        ActiveWeapon.Instance.transform.rotation = Quaternion.Euler(0, 0, 0);
-        newWeapon.transform.parent = ActiveWeapon.Instance.transform;
+        GameObject newWeapon = Instantiate(weaponToSpawn, ActiveWeapon.Instance.transform);
+        //ActiveWeapon.Instance.transform.rotation = Quaternion.Euler(0, 0, 0);
+        //newWeapon.transform.parent = ActiveWeapon.Instance.transform;
 
         ActiveWeapon.Instance.NewWeapon(newWeapon.GetComponent<MonoBehaviour>());
     }
