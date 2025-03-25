@@ -10,8 +10,10 @@ public class AreaExit : MonoBehaviour
     private float waitToLoadTime = 1f;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.GetComponent<PlayerController>())
+        Debug.Log("Touched");
+        if (collision.gameObject.GetComponent<PlayerController>())
         {
+            Debug.Log("Trans to " + sceneToLoad + " " + sceneTransitionName);
             SceneManagement.Instance.SceneTransitionName = sceneTransitionName;
             UIFade.Instance.Fade(1);
             StartCoroutine(LoadSceneCoroutine());
@@ -20,6 +22,7 @@ public class AreaExit : MonoBehaviour
 
     private IEnumerator LoadSceneCoroutine()
     {
+        Debug.Log("Trans to " + sceneToLoad);
         while(waitToLoadTime >= 0)
         {
             waitToLoadTime -= Time.deltaTime;
