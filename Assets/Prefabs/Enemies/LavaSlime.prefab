@@ -227,7 +227,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 3
-  deathVFXPrefab: {fileID: 0}
+  deathVFXPrefab: {fileID: 1089062484730611471, guid: 04996370b7703714d8d99d4c10777038,
+    type: 3}
   knockBackThrust: 15
 --- !u!114 &8242363791739769160
 MonoBehaviour:
@@ -254,7 +255,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3640741ce193a894fb7085281a61f522, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  whiteFlashMat: {fileID: 0}
+  whiteFlashMat: {fileID: 2100000, guid: 9c427f7d302a723468b6aaeccf310bf6, type: 2}
   restoreDefaultMatTime: 0.2
 --- !u!114 &2677762414419620626
 MonoBehaviour:
