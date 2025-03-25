@@ -1,4 +1,5 @@
-using System.Collections;
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyAI : MonoBehaviour
@@ -70,6 +71,7 @@ public class EnemyAI : MonoBehaviour
             roamPosition = GetRoamingPosition();
         }
     }
+
     private void Attacking()
     {
         if (Vector2.Distance(transform.position, PlayerController.Instance.transform.position) > attackRange)
@@ -77,15 +79,17 @@ public class EnemyAI : MonoBehaviour
             state = State.Roaming;
         }
 
-        if (attackRange != 0 && canAttack) 
+        if (attackRange != 0 && canAttack)
         {
+
             canAttack = false;
             (enemyType as IEnemy).Attack();
 
-            if (stopMovingWhileAttacking) 
+            if (stopMovingWhileAttacking)
             {
                 enemyPathfinding.StopMoving();
-            } else
+            }
+            else
             {
                 enemyPathfinding.MoveTo(roamPosition);
             }
@@ -97,11 +101,12 @@ public class EnemyAI : MonoBehaviour
     private IEnumerator AttackCooldownRoutine()
     {
         yield return new WaitForSeconds(attackCooldown);
-        canAttack = false;
+        canAttack = true;
     }
 
     private Vector2 GetRoamingPosition()
     {
+        timeRoaming = 0f;
         return new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f)).normalized;
     }
 }

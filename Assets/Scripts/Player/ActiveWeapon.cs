@@ -57,7 +57,7 @@ public class ActiveWeapon : Singleton<ActiveWeapon>
     {
         if (attackButtonDown && !isAttacking && CurrentActiveWeapon)
         {
-            AttackCooldown();
+            //AttackCooldown();
             (CurrentActiveWeapon as IWeapon).Attack();
         }
     }
@@ -70,7 +70,7 @@ public class ActiveWeapon : Singleton<ActiveWeapon>
     public void NewWeapon(MonoBehaviour monoBehaviour)
     {
         CurrentActiveWeapon = monoBehaviour;
-        AttackCooldown();
+        //AttackCooldown();
         attackCD = (CurrentActiveWeapon as IWeapon).GetWeaponInfo().weaponCooldown;
     }
 }

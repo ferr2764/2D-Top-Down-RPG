@@ -1,3 +1,5 @@
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyPathfinding : MonoBehaviour
@@ -18,16 +20,15 @@ public class EnemyPathfinding : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (knockback.GettingKnockedBack)
-        {
-            return;
-        }
+        if (knockback.GettingKnockedBack) { return; }
+
         rb.MovePosition(rb.position + moveDir * (moveSpeed * Time.fixedDeltaTime));
 
         if (moveDir.x < 0)
         {
             spriteRenderer.flipX = true;
-        } else if (moveDir.x > 0)
+        }
+        else if (moveDir.x > 0)
         {
             spriteRenderer.flipX = false;
         }
