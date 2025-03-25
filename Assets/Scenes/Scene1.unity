@@ -372,7 +372,6 @@ Transform:
   - {fileID: 1063561501}
   - {fileID: 977187064}
   - {fileID: 835716972}
-  - {fileID: 1257182145}
   - {fileID: 554998128}
   - {fileID: 499303671}
   - {fileID: 1162593317}
@@ -17212,6 +17211,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 95581188}
     m_Modifications:
+    - target: {fileID: -2038411059222981023, guid: b1ebae0c40f81ab4e9e42191564b24d5, type: 3}
+      propertyPath: goldCoin
+      value: 
+      objectReference: {fileID: 1202032568429264218, guid: 7b998ef7231c9674f875404c38cdd6d9, type: 3}
+    - target: {fileID: -2038411059222981023, guid: b1ebae0c40f81ab4e9e42191564b24d5, type: 3}
+      propertyPath: healthGlobe
+      value: 
+      objectReference: {fileID: 1202032568429264218, guid: e38f7ad8f8348c841aec46ff843dc45b, type: 3}
+    - target: {fileID: -2038411059222981023, guid: b1ebae0c40f81ab4e9e42191564b24d5, type: 3}
+      propertyPath: staminaGlobe
+      value: 
+      objectReference: {fileID: 1202032568429264218, guid: 674f634ff7b7f83468e1d294f95231fa, type: 3}
     - target: {fileID: 1852680919453272788, guid: b1ebae0c40f81ab4e9e42191564b24d5, type: 3}
       propertyPath: destroyVFX
       value: 
@@ -17322,7 +17333,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2269372803579508387, guid: 7715c670367df2b469c6a69fe1e41af8, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -17355,6 +17367,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1680487325}
     m_Modifications:
+    - target: {fileID: 2269372803579508387, guid: 7715c670367df2b469c6a69fe1e41af8, type: 3}
+      propertyPath: goldCoin
+      value: 
+      objectReference: {fileID: 1202032568429264218, guid: 7b998ef7231c9674f875404c38cdd6d9, type: 3}
+    - target: {fileID: 2269372803579508387, guid: 7715c670367df2b469c6a69fe1e41af8, type: 3}
+      propertyPath: healthGlobe
+      value: 
+      objectReference: {fileID: 1202032568429264218, guid: e38f7ad8f8348c841aec46ff843dc45b, type: 3}
+    - target: {fileID: 2269372803579508387, guid: 7715c670367df2b469c6a69fe1e41af8, type: 3}
+      propertyPath: staminaGlobe
+      value: 
+      objectReference: {fileID: 1202032568429264218, guid: 674f634ff7b7f83468e1d294f95231fa, type: 3}
     - target: {fileID: 7500008549267732061, guid: 7715c670367df2b469c6a69fe1e41af8, type: 3}
       propertyPath: m_Name
       value: Blue Slime (1)
@@ -17399,7 +17423,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2269372803579508387, guid: 7715c670367df2b469c6a69fe1e41af8, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -17472,19 +17497,19 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 95581188}
+    m_TransformParent: {fileID: 1063561501}
     m_Modifications:
     - target: {fileID: 3564581377027291376, guid: 9d4be8326eb89a9488452110b57679b1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -21.707092
+      value: -21.572834
       objectReference: {fileID: 0}
     - target: {fileID: 3564581377027291376, guid: 9d4be8326eb89a9488452110b57679b1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.9163685
+      value: -2.5395203
       objectReference: {fileID: 0}
     - target: {fileID: 3564581377027291376, guid: 9d4be8326eb89a9488452110b57679b1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 8.39525
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3564581377027291376, guid: 9d4be8326eb89a9488452110b57679b1, type: 3}
       propertyPath: m_LocalRotation.w
@@ -17575,7 +17600,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2269372803579508387, guid: 7715c670367df2b469c6a69fe1e41af8, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -21012,6 +21038,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 95581188}
     m_Modifications:
+    - target: {fileID: -2038411059222981023, guid: b1ebae0c40f81ab4e9e42191564b24d5, type: 3}
+      propertyPath: goldCoin
+      value: 
+      objectReference: {fileID: 1202032568429264218, guid: 7b998ef7231c9674f875404c38cdd6d9, type: 3}
+    - target: {fileID: -2038411059222981023, guid: b1ebae0c40f81ab4e9e42191564b24d5, type: 3}
+      propertyPath: staminaGlobe
+      value: 
+      objectReference: {fileID: 1202032568429264218, guid: 674f634ff7b7f83468e1d294f95231fa, type: 3}
     - target: {fileID: 1852680919453272788, guid: b1ebae0c40f81ab4e9e42191564b24d5, type: 3}
       propertyPath: destroyVFX
       value: 
@@ -21181,7 +21215,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 3564581377027291376, guid: a2009cf30895f3c4cba15253ac887d77, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1257182145}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2009cf30895f3c4cba15253ac887d77, type: 3}
 --- !u!4 &1991005641 stripped
@@ -37687,6 +37724,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 1758832753513005220, guid: 90be6f3ef4c8876469586e22bea94470, type: 3}
+      propertyPath: maxHealth
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1994396831134375470, guid: 90be6f3ef4c8876469586e22bea94470, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8962814760177389687, guid: 90be6f3ef4c8876469586e22bea94470, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.1
@@ -37740,6 +37785,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1680487325}
     m_Modifications:
+    - target: {fileID: 1640409152860465548, guid: 7715c670367df2b469c6a69fe1e41af8, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5885153149769728978, guid: 7715c670367df2b469c6a69fe1e41af8, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7500008549267732061, guid: 7715c670367df2b469c6a69fe1e41af8, type: 3}
       propertyPath: m_Name
       value: Blue Slime
@@ -37788,7 +37841,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 7707310726235026342, guid: 7715c670367df2b469c6a69fe1e41af8, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 2269372803579508387, guid: 7715c670367df2b469c6a69fe1e41af8, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -38179,7 +38237,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 8757504554485440717, guid: a44f0d6ce0c6ab7499fd10a0453bda31, type: 3}
+    - {fileID: 1221793686080653281, guid: a44f0d6ce0c6ab7499fd10a0453bda31, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a44f0d6ce0c6ab7499fd10a0453bda31, type: 3}

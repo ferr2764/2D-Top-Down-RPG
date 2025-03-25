@@ -13,12 +13,9 @@ GameObject:
   - component: {fileID: 2677645231206117755}
   - component: {fileID: 6331111008212174805}
   - component: {fileID: 8396667841764591592}
-  - component: {fileID: 1640409152860465548}
-  - component: {fileID: 5188919485432178936}
   - component: {fileID: 5300475694367545038}
   - component: {fileID: 5885153149769728978}
   - component: {fileID: 7707310726235026342}
-  - component: {fileID: 2269372803579508387}
   m_Layer: 0
   m_Name: Blue Slime
   m_TagString: Untagged
@@ -177,41 +174,6 @@ MonoBehaviour:
   enemyType: {fileID: 0}
   attackCooldown: 2
   stopMovingWhileAttacking: 0
---- !u!114 &1640409152860465548
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7500008549267732061}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 648a6778f90bf0b46a8d82f886564858, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 2
---- !u!95 &5188919485432178936
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7500008549267732061}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 5a7794343c551cd4fb945c7e70ba177b, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &5300475694367545038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -254,18 +216,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   whiteFlashMat: {fileID: 2100000, guid: 9c427f7d302a723468b6aaeccf310bf6, type: 2}
   restoreDefaultMatTime: 0.2
---- !u!114 &2269372803579508387
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7500008549267732061}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52493e7a557adcd4a88eb298074d5da6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  goldCoin: {fileID: 0}
-  healthGlobe: {fileID: 0}
-  staminaGlobe: {fileID: 0}
