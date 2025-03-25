@@ -41065,12 +41065,12 @@ PrefabInstance:
     - target: {fileID: 8685088293255016887, guid: 2ff5e5466ab941645a85e15df8463638,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.6607144
+      value: -10.8871
       objectReference: {fileID: 0}
     - target: {fileID: 8685088293255016887, guid: 2ff5e5466ab941645a85e15df8463638,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.9464293
+      value: -1.2401428
       objectReference: {fileID: 0}
     - target: {fileID: 8994168726381813984, guid: 2ff5e5466ab941645a85e15df8463638,
         type: 3}
@@ -41080,12 +41080,12 @@ PrefabInstance:
     - target: {fileID: 9192301527195729507, guid: 2ff5e5466ab941645a85e15df8463638,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.6607144
+      value: -16.366072
       objectReference: {fileID: 0}
     - target: {fileID: 9192301527195729507, guid: 2ff5e5466ab941645a85e15df8463638,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.9464293
+      value: -1.2410715
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -41107,7 +41107,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &358169116
 Transform:
   m_ObjectHideFlags: 0
@@ -41686,12 +41686,12 @@ PrefabInstance:
     - target: {fileID: 8962814760177389687, guid: 90be6f3ef4c8876469586e22bea94470,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.1
+      value: -18.33
       objectReference: {fileID: 0}
     - target: {fileID: 8962814760177389687, guid: 90be6f3ef4c8876469586e22bea94470,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.78
+      value: -1.39
       objectReference: {fileID: 0}
     - target: {fileID: 8962814760177389687, guid: 90be6f3ef4c8876469586e22bea94470,
         type: 3}
@@ -44642,7 +44642,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad: LavaScene
-  sceneTransitionName: SEntry
+  sceneTransitionName: NEntry
 --- !u!61 &1240259782
 BoxCollider2D:
   m_ObjectHideFlags: 0
