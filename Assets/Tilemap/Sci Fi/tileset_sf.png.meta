@@ -741,57 +741,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset_sf_9
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 640
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b850474c3ccb0e2e0800000000000000
-      internalID: -2098469877354068597
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_sf_10
-      rect:
-        serializedVersion: 2
-        x: 526
-        y: 645
-        width: 50
-        height: 53
-      alignment: 9
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 98a434da67392a460800000000000000
-      internalID: 7251520487942212233
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: tileset_sf_11
       rect:
         serializedVersion: 2
-        x: 576
+        x: 526
         y: 640
-        width: 64
-        height: 64
+        width: 114
+        height: 61
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1118,9 +1074,9 @@ TextureImporter:
       name: tileset_sf_26
       rect:
         serializedVersion: 2
-        x: 448
+        x: 461
         y: 576
-        width: 64
+        width: 83
         height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1137,38 +1093,16 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset_sf_27
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 576
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 76612f19764682b70800000000000000
-      internalID: 8874453461726533223
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: tileset_sf_28
       rect:
         serializedVersion: 2
         x: 576
         y: 576
-        width: 64
+        width: 29
         height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 8, z: 0, w: 9}
       customData: 
       outline: []
       physicsShape: []
@@ -1467,60 +1401,16 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset_sf_42
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 512
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0e168e23205528390800000000000000
-      internalID: -7817592535229373984
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_sf_43
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 512
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 229269c5e8a84cd50800000000000000
-      internalID: 6756677685005920546
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: tileset_sf_44
       rect:
         serializedVersion: 2
-        x: 512
+        x: 450
         y: 512
-        width: 64
+        width: 95
         height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 8, z: 0, w: 9}
       customData: 
       outline: []
       physicsShape: []
