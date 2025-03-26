@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 8831743133609130631}
   - component: {fileID: 2677645231206117755}
   - component: {fileID: 6331111008212174805}
-  - component: {fileID: 8396667841764591592}
   - component: {fileID: 5300475694367545038}
   - component: {fileID: 5885153149769728978}
   - component: {fileID: 7707310726235026342}
@@ -157,23 +156,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!114 &8396667841764591592
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7500008549267732061}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e40160abf0e87f64397d2d3ee3d17b65, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  roamChangeDirFloat: 2
-  attackRange: 0
-  enemyType: {fileID: 0}
-  attackCooldown: 2
-  stopMovingWhileAttacking: 0
 --- !u!114 &5300475694367545038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -187,7 +169,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 3
-  deathVFXPrefab: {fileID: 8728329868180887449, guid: 2b6c85f579639934b95fb82ed9cb579f, type: 3}
+  deathVFXPrefab: {fileID: 8728329868180887449, guid: 2b6c85f579639934b95fb82ed9cb579f,
+    type: 3}
   knockBackThrust: 15
 --- !u!114 &5885153149769728978
 MonoBehaviour:
