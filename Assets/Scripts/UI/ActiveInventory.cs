@@ -46,6 +46,10 @@ public class ActiveInventory : Singleton<ActiveInventory>
 
         Transform childTransform = transform.GetChild(activeIndex);
         InventorySlot inventorySlot = childTransform.GetComponentInChildren<InventorySlot>();
+        if (!inventorySlot.isActiveAndEnabled)
+        {
+            return;
+        }
         WeaponInfo weaponInfo = inventorySlot.GetWeaponInfo();
         GameObject weaponToSpawn = weaponInfo.weaponPrefab;
 

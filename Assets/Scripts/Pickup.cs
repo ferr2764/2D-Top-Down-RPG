@@ -8,6 +8,7 @@ public class Pickup : MonoBehaviour
         GoldCoin,
         StaminaGlobe,
         HealthGloube,
+        MapEnder,
     }
 
     [SerializeField] private PickUpType pickUpType;
@@ -74,6 +75,9 @@ public class Pickup : MonoBehaviour
                 break;
             case PickUpType.StaminaGlobe:
                 Stamina.Instance.RefreshStamina();
+                break;
+            case PickUpType.MapEnder:
+                gameObject.GetComponent<MapEnder>().Action();
                 break;
         }
     }

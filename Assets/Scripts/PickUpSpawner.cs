@@ -1,30 +1,22 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class PickUpSpawner : MonoBehaviour
 {
-    [SerializeField] private GameObject goldCoin, healthGlobe, staminaGlobe;
+    [SerializeField] private GameObject mapEnder;
+    [SerializeField] private List<GameObject> otherItems;
 
 
     public void DropItems()
     {
-        int randonNum = Random.Range(1, 5);
-
-        switch (randonNum)
+        if (mapEnder != null)
         {
-            case 1:
-                Instantiate(healthGlobe, transform.position, Quaternion.identity);
-                break;
-            case 2:
-                Instantiate(staminaGlobe, transform.position, Quaternion.identity);
-                break;
-            case 3:
-                int randomAmountOfGold = Random.Range(1, 4);
-                for (int i = 0; i < randomAmountOfGold; i++)
-                {
-                    Instantiate(goldCoin, transform.position, Quaternion.identity);
-                }
-
-                break;
+            Instantiate(mapEnder, transform.position, Quaternion.identity);
+        }
+        if (otherItems.Count > 0)
+        {
+            int randomNum = Random.Range(0, otherItems.Count);
+            Instantiate(otherItems[randomNum], transform.position, Quaternion.identity);
         }
     }
 }
