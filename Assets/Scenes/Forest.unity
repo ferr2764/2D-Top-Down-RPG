@@ -18644,6 +18644,41 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 494808607643666948, guid: 1fe61aa704e7718418cf9f813d834de1,
+        type: 3}
+      propertyPath: stagger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 494808607643666948, guid: 1fe61aa704e7718418cf9f813d834de1,
+        type: 3}
+      propertyPath: restTime
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 494808607643666948, guid: 1fe61aa704e7718418cf9f813d834de1,
+        type: 3}
+      propertyPath: oscillate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 494808607643666948, guid: 1fe61aa704e7718418cf9f813d834de1,
+        type: 3}
+      propertyPath: burstCount
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 494808607643666948, guid: 1fe61aa704e7718418cf9f813d834de1,
+        type: 3}
+      propertyPath: timeBetweenBursts
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 494808607643666948, guid: 1fe61aa704e7718418cf9f813d834de1,
+        type: 3}
+      propertyPath: projectilesPerBurst
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2232751534388015593, guid: 1fe61aa704e7718418cf9f813d834de1,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 2460664589821398140, guid: 1fe61aa704e7718418cf9f813d834de1,
         type: 3}
       propertyPath: m_Enabled
