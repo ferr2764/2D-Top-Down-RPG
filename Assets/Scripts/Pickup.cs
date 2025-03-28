@@ -9,6 +9,7 @@ public class Pickup : MonoBehaviour
         StaminaGlobe,
         HealthGloube,
         MapEnder,
+        DashUnlockSkill
     }
 
     [SerializeField] private PickUpType pickUpType;
@@ -77,6 +78,9 @@ public class Pickup : MonoBehaviour
                 Stamina.Instance.RefreshStamina();
                 break;
             case PickUpType.MapEnder:
+                gameObject.GetComponent<MapEnder>().Action();
+                break;
+            case PickUpType.DashUnlockSkill:
                 gameObject.GetComponent<MapEnder>().Action();
                 break;
         }

@@ -32,8 +32,19 @@ public class EnemyAI : MonoBehaviour
 
     private void Start()
     {
+        StartCoroutine(FindPlayerAfterDelay());
         roamPosition = GetRoamingPosition();
     }
+
+    private IEnumerator FindPlayerAfterDelay()
+    {
+        yield return new WaitForSeconds(0.5f); // Đợi 0.5 giây cho Scene load xong
+        if (PlayerController.Instance != null)
+        {
+            Debug.Log("Enemy đã tìm thấy Player!");
+        }
+    }
+
 
     private void Update()
     {
@@ -57,8 +68,9 @@ public class EnemyAI : MonoBehaviour
 
     private void Roaming()
     {
-        timeRoaming += Time.deltaTime;
+        if (PlayerController.Instance == null) return; // 👈 Fix null Player khi load Scene mới
 
+        timeRoaming += Time.deltaTime;
         enemyPathfinding.MoveTo(roamPosition);
 
         if (Vector2.Distance(transform.position, PlayerController.Instance.transform.position) < attackRange)
@@ -74,6 +86,8 @@ public class EnemyAI : MonoBehaviour
 
     private void Attacking()
     {
+        if (PlayerController.Instance == null) return; // 👈 Fix null Player khi load Scene mới
+
         if (Vector2.Distance(transform.position, PlayerController.Instance.transform.position) > attackRange)
         {
             state = State.Roaming;
@@ -81,7 +95,6 @@ public class EnemyAI : MonoBehaviour
 
         if (attackRange != 0 && canAttack)
         {
-
             canAttack = false;
             (enemyType as IEnemy).Attack();
 
@@ -97,6 +110,7 @@ public class EnemyAI : MonoBehaviour
             StartCoroutine(AttackCooldownRoutine());
         }
     }
+
 
     private IEnumerator AttackCooldownRoutine()
     {
