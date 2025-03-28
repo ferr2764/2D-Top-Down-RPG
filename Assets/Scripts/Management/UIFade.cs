@@ -25,4 +25,11 @@ public class UIFade : Singleton<UIFade>
             yield return null;
         }
     }
+    public void ToggleUI(bool show)
+    {
+        for (int i = 0; i < transform.childCount; i++)
+        {
+            transform.GetChild(i).gameObject.SetActive(show);
+        }
+    }
 }

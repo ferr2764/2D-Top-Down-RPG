@@ -161,7 +161,12 @@ PrefabInstance:
     - target: {fileID: 2596440061214685099, guid: e3efbd040e7cda347872fd4a5b0bbc52,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2596440061214685099, guid: e3efbd040e7cda347872fd4a5b0bbc52,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 5830284120955071695, guid: e3efbd040e7cda347872fd4a5b0bbc52,
         type: 3}
@@ -42000,7 +42005,12 @@ PrefabInstance:
     - target: {fileID: 2596440061214685099, guid: e3efbd040e7cda347872fd4a5b0bbc52,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2596440061214685099, guid: e3efbd040e7cda347872fd4a5b0bbc52,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 5830284120955071695, guid: e3efbd040e7cda347872fd4a5b0bbc52,
         type: 3}
@@ -42562,6 +42572,7 @@ MonoBehaviour:
   player: {fileID: 1711149689}
   speed: 4
   detectRange: 10
+  stopDistance: 0.5
   animator: {fileID: 0}
 --- !u!1001 &864871430
 PrefabInstance:
@@ -42914,6 +42925,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2596440061214685099, guid: e3efbd040e7cda347872fd4a5b0bbc52,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 5830284120955071695, guid: e3efbd040e7cda347872fd4a5b0bbc52,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -43149,6 +43165,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneToLoad: LavaScene
   sceneTransitionName: SEntry
+  suppressRequirement: 0
 --- !u!61 &1240259782
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -43208,8 +43225,8 @@ Transform:
   m_LocalScale: {x: 3.1, y: 1.72, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 944096038}
   - {fileID: 989526087}
+  - {fileID: 944096038}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1249490816
@@ -93197,7 +93214,12 @@ PrefabInstance:
     - target: {fileID: 2596440061214685099, guid: e3efbd040e7cda347872fd4a5b0bbc52,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2596440061214685099, guid: e3efbd040e7cda347872fd4a5b0bbc52,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 5830284120955071695, guid: e3efbd040e7cda347872fd4a5b0bbc52,
         type: 3}
@@ -93757,7 +93779,12 @@ PrefabInstance:
     - target: {fileID: 2596440061214685099, guid: e3efbd040e7cda347872fd4a5b0bbc52,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2596440061214685099, guid: e3efbd040e7cda347872fd4a5b0bbc52,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 5830284120955071695, guid: e3efbd040e7cda347872fd4a5b0bbc52,
         type: 3}
@@ -95501,6 +95528,11 @@ PrefabInstance:
       propertyPath: startingHealth
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 5410752956001712784, guid: ec970230fcbbfcd40b11b48e5df46701,
+        type: 3}
+      propertyPath: m_UpdateMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6870221722441430548, guid: ec970230fcbbfcd40b11b48e5df46701,
         type: 3}
       propertyPath: m_GravityScale
@@ -95515,6 +95547,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LavaSlime
+      objectReference: {fileID: 0}
+    - target: {fileID: 8824262373758745891, guid: ec970230fcbbfcd40b11b48e5df46701,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 8940513289404500135, guid: ec970230fcbbfcd40b11b48e5df46701,
         type: 3}
@@ -95708,7 +95745,12 @@ PrefabInstance:
     - target: {fileID: 2596440061214685099, guid: e3efbd040e7cda347872fd4a5b0bbc52,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2596440061214685099, guid: e3efbd040e7cda347872fd4a5b0bbc52,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 5830284120955071695, guid: e3efbd040e7cda347872fd4a5b0bbc52,
         type: 3}
@@ -95801,7 +95843,12 @@ PrefabInstance:
     - target: {fileID: 2596440061214685099, guid: e3efbd040e7cda347872fd4a5b0bbc52,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2596440061214685099, guid: e3efbd040e7cda347872fd4a5b0bbc52,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 5830284120955071695, guid: e3efbd040e7cda347872fd4a5b0bbc52,
         type: 3}
@@ -96134,6 +96181,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneToLoad: Forest
   sceneTransitionName: SEntry
+  suppressRequirement: 1
 --- !u!4 &5385995262112290420
 Transform:
   m_ObjectHideFlags: 0
@@ -96192,6 +96240,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2596440061214685099, guid: e3efbd040e7cda347872fd4a5b0bbc52,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 5830284120955071695, guid: e3efbd040e7cda347872fd4a5b0bbc52,
         type: 3}
