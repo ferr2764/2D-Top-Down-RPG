@@ -7061,7 +7061,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 683674fac1f4aba4e9b690c3018861ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transitionName: SEntry
+  transitionName: NEntry
 --- !u!1001 &654127007
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -60655,7 +60655,6 @@ Transform:
   - {fileID: 908442219}
   - {fileID: 1508886786}
   - {fileID: 1764638359}
-  - {fileID: 926018750}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1219964967
