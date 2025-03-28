@@ -1,15 +1,17 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PickUpLast : MonoBehaviour
 {
-    [SerializeField] private GameObject finalReward;
+    [SerializeField] private GameObject messagePanel;
+    [SerializeField] private Text messageText;
 
-    public void DropFinalItem()
+    public void ShowVictoryMessage()
     {
-        if (finalReward != null)
+        if (GameObject.FindGameObjectsWithTag("Boss").Length <= 1)
         {
-            Instantiate(finalReward, transform.position, Quaternion.identity);
+            messagePanel.SetActive(true);
+            messageText.text = "You have defeated all monsters and saved the world";
         }
-    }    
     }
 }

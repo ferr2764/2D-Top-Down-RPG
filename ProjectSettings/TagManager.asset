@@ -10,6 +10,7 @@ TagManager:
   - ButtonTag
   - UICanvas
   - Enemy
+  - Boss
   layers:
   - Default
   - TransparentFX

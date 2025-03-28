@@ -8,7 +8,6 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] private GameObject deathVFXPrefab;
     [SerializeField] private float knockBackThrust = 15f;
 
-
     private int currentHealth;
     private Knockback knockback;
     private Flash flash;
@@ -44,6 +43,16 @@ public class EnemyHealth : MonoBehaviour
         {
             Instantiate(deathVFXPrefab, transform.position, Quaternion.identity);
             GetComponent<PickUpSpawner>().DropItems();
+
+
+            if (CompareTag("Boss")) 
+            {
+                if (GameObject.FindGameObjectsWithTag("Boss").Length <= 1) 
+                {
+                    FindObjectOfType<PickUpLast>()?.ShowVictoryMessage();
+                }
+            }
+
             Destroy(gameObject);
         }
     }
