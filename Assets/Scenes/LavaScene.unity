@@ -9900,7 +9900,7 @@ GameObject:
   - component: {fileID: 526276659}
   m_Layer: 0
   m_Name: AreaExit
-  m_TagString: Untagged
+  m_TagString: AreaExit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14048,7 +14048,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52493e7a557adcd4a88eb298074d5da6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mapEnder: {fileID: 0}
+  mapEnder: {fileID: 471935670693805602, guid: 6c55a71476b1efc46829611869e12df2, type: 3}
   otherItems: []
 --- !u!114 &566517168
 MonoBehaviour:
@@ -14094,22 +14094,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   knockBackTime: 0.2
---- !u!114 &566517171
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 566517166}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c84e4ba69593f84187525deb42ec7f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  speed: 4
-  detectRange: 15
-  animator: {fileID: 566517173}
 --- !u!114 &566517172
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14535,6 +14519,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: UICanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 2636003799518607145, guid: a44f0d6ce0c6ab7499fd10a0453bda31,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2890518109184129895, guid: a44f0d6ce0c6ab7499fd10a0453bda31,
         type: 3}
       propertyPath: m_Pivot.x
@@ -14665,6 +14654,12 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3746679818213047630, guid: a44f0d6ce0c6ab7499fd10a0453bda31,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -5940781818166149764, guid: 50bdaf1bd38274e4889bcab31b8502f2,
+        type: 3}
     - target: {fileID: 4208413387831835325, guid: a44f0d6ce0c6ab7499fd10a0453bda31,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -14695,6 +14690,12 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5362867044259527331, guid: a44f0d6ce0c6ab7499fd10a0453bda31,
+        type: 3}
+      propertyPath: weaponInfo
+      value: 
+      objectReference: {fileID: 11400000, guid: 896cfc75463c8374cbfa3b47eb3a185a,
+        type: 2}
     - target: {fileID: 5622018498544390875, guid: a44f0d6ce0c6ab7499fd10a0453bda31,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -14715,6 +14716,12 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -6.3599854
       objectReference: {fileID: 0}
+    - target: {fileID: 6245148988337686579, guid: a44f0d6ce0c6ab7499fd10a0453bda31,
+        type: 3}
+      propertyPath: weaponInfo
+      value: 
+      objectReference: {fileID: 11400000, guid: 0aba3f8a9105faf44b4c9150929cb743,
+        type: 2}
     - target: {fileID: 7328490701938232037, guid: a44f0d6ce0c6ab7499fd10a0453bda31,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -14775,6 +14782,12 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7656504864976332820, guid: a44f0d6ce0c6ab7499fd10a0453bda31,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -7856493677412862020, guid: b5a75f7e3d9b02446a858c40f06ee77d,
+        type: 3}
     - target: {fileID: 8918462057882906138, guid: a44f0d6ce0c6ab7499fd10a0453bda31,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -78420,10 +78433,6 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 566517172}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: b231456e0f0a93e4086c5a9f82a91139,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 566517171}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: b231456e0f0a93e4086c5a9f82a91139,
         type: 3}
       insertIndex: -1
