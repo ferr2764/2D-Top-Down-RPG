@@ -3535,34 +3535,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset_sf_141
-      rect:
-        serializedVersion: 2
-        x: 576
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7f8889bcf83ad0950800000000000000
-      internalID: 6416964882064247031
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: tileset_sf_142
       rect:
         serializedVersion: 2
-        x: 640
+        x: 582
         y: 0
-        width: 64
+        width: 118
         height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
