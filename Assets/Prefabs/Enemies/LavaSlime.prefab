@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 2230280693527144026}
   - component: {fileID: 6870221722441430548}
   - component: {fileID: 2693777429652099203}
-  - component: {fileID: 8815269239668287190}
   - component: {fileID: 3508804088873364227}
   - component: {fileID: 8242363791739769160}
   - component: {fileID: 8419917097947707812}
@@ -201,19 +200,6 @@ MonoBehaviour:
   enemyType: {fileID: 0}
   attackCooldown: 2
   stopMovingWhileAttacking: 0
---- !u!114 &8815269239668287190
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8824262373758745891}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 648a6778f90bf0b46a8d82f886564858, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 2
 --- !u!114 &3508804088873364227
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -269,6 +255,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52493e7a557adcd4a88eb298074d5da6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goldCoin: {fileID: 0}
-  healthGlobe: {fileID: 0}
-  staminaGlobe: {fileID: 0}
+  mapEnder: {fileID: 0}
+  otherItems: []
