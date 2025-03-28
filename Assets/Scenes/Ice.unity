@@ -63839,7 +63839,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad: Sci Fi
-  sceneTransitionName: NEntry
+  sceneTransitionName: SEntry
   suppressRequirement: 0
 --- !u!61 &1140075835
 BoxCollider2D:
