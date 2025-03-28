@@ -20,6 +20,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DeadScene.unity
     guid: e94af1e98a106234dbc77bfafdc6364b
+  - enabled: 1
+    path: Assets/Scenes/Ice.unity
+    guid: ba4c756ba431f1d49b2764f5ee9ea049
+  - enabled: 1
+    path: Assets/Scenes/Sci Fi.unity
+    guid: 88b7a72567d6b9641bb4e9b996f92c72
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100,
       type: 3}
