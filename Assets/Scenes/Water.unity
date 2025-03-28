@@ -42825,7 +42825,7 @@ Transform:
   m_GameObject: {fileID: 944096037}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.21, y: -6.24, z: 0}
+  m_LocalPosition: {x: -0.42, y: -0.99, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -42941,7 +42941,7 @@ PrefabInstance:
     - target: {fileID: 7083868626939430062, guid: 8050d3fdd7ed58b42b71c66d35462a38,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -43270,7 +43270,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad: LavaScene
-  sceneTransitionName: SEntry
+  sceneTransitionName: NEntry
   suppressRequirement: 0
 --- !u!61 &1240259782
 BoxCollider2D:

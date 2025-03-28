@@ -20,7 +20,7 @@ public class GrapeLandSplatter : MonoBehaviour
     {
         PlayerHealth playerHealth = other.gameObject.GetComponent<PlayerHealth>();
 
-        playerHealth?.TakeDamage(1, transform);
+        playerHealth?.TakeDamage(5, transform);
     }
 
     private void DisableCollider()
