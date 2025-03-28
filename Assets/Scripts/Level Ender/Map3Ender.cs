@@ -13,10 +13,6 @@ public class Map3Ender : MapEnder
         //Item (game object)
         inventory2.transform.GetChild(1).gameObject.SetActive(true);
         //Open exit
-        var exit = GameObject.FindWithTag("AreaExit");
-        //Enable trigger for the next map
-        exit.GetComponent<BoxCollider2D>().enabled = true;
-        //Enable portal FX
-        exit.transform.GetChild(0).gameObject.SetActive(true);
+        AreaExit.GotItem = true;
     }
 }

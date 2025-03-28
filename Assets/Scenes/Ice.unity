@@ -68671,7 +68671,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e534eaedfec1cb4e89c3cecca9aa917, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: LavaScene
+  sceneToLoad: Sci Fi
   sceneTransitionName: NEntry
   suppressRequirement: 0
 --- !u!61 &1140075835

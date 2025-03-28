@@ -46642,12 +46642,22 @@ PrefabInstance:
     - target: {fileID: 1758832753513005220, guid: 90be6f3ef4c8876469586e22bea94470,
         type: 3}
       propertyPath: maxHealth
-      value: 10
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1994396831134375470, guid: 90be6f3ef4c8876469586e22bea94470,
         type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2080274662118389452, guid: 90be6f3ef4c8876469586e22bea94470,
+        type: 3}
+      propertyPath: dashSpeed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2080274662118389452, guid: 90be6f3ef4c8876469586e22bea94470,
+        type: 3}
+      propertyPath: moveSpeed
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8962814760177389687, guid: 90be6f3ef4c8876469586e22bea94470,
         type: 3}
@@ -52126,6 +52136,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneToLoad: Water
   sceneTransitionName: NEntry
+  suppressRequirement: 0
 --- !u!1001 &8592607063501547096
 PrefabInstance:
   m_ObjectHideFlags: 0
