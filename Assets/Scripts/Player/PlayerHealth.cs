@@ -96,9 +96,9 @@ public class PlayerHealth : Singleton<PlayerHealth>
 
     private IEnumerator DeathLoadSceneRoutine()
     {
-        UIFade.Instance.Fade(1);
-        SceneManager.LoadSceneAsync("DeadScene", LoadSceneMode.Single);
-        yield return null;
+        yield return new WaitForSeconds(2f);
+        Destroy(gameObject);
+        SceneManager.LoadScene("Forest");
     }
 
     private IEnumerator DamageRecoveryRoutine()
