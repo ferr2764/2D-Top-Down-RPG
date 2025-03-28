@@ -89,8 +89,8 @@ public class Pickup : MonoBehaviour
     private IEnumerator AnimCurveSpawnRoutine()
     {
         Vector2 startPoint = transform.position;
-        float randomX = transform.position.x + Random.Range(-2f, 2f); 
-        float randomY = transform.position.y + Random.Range(-14, 14);
+        float randomX = transform.position.x + Random.Range(0, 0); 
+        float randomY = transform.position.y + Random.Range(0, 0);
         Vector2 endPoint = new Vector2(randomX, randomY);
         float timePassed = 0f;
         while (timePassed < popDuration)
