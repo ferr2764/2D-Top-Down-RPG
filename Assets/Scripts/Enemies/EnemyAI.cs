@@ -36,15 +36,21 @@ public class EnemyAI : MonoBehaviour
         roamPosition = GetRoamingPosition();
     }
 
+    /// <summary>
+    /// Đợi một chút để Scene load xong trước khi tìm Player
+    /// </summary>
     private IEnumerator FindPlayerAfterDelay()
     {
-        yield return new WaitForSeconds(0.5f); // Đợi 0.5 giây cho Scene load xong
+        yield return new WaitForSeconds(0.5f); // Đợi 0.5 giây
         if (PlayerController.Instance != null)
         {
-            Debug.Log("Enemy đã tìm thấy Player!");
+            Debug.Log("✅ Enemy đã tìm thấy Player!");
+        }
+        else
+        {
+            Debug.LogWarning("⚠️ PlayerController.Instance chưa sẵn sàng.");
         }
     }
-
 
     private void Update()
     {
@@ -68,7 +74,11 @@ public class EnemyAI : MonoBehaviour
 
     private void Roaming()
     {
-        if (PlayerController.Instance == null) return; // 👈 Fix null Player khi load Scene mới
+        if (PlayerController.Instance == null)
+        {
+            Debug.LogWarning("⚠️ PlayerController.Instance chưa được load!");
+            return;
+        }
 
         timeRoaming += Time.deltaTime;
         enemyPathfinding.MoveTo(roamPosition);
@@ -86,7 +96,11 @@ public class EnemyAI : MonoBehaviour
 
     private void Attacking()
     {
-        if (PlayerController.Instance == null) return; // 👈 Fix null Player khi load Scene mới
+        if (PlayerController.Instance == null)
+        {
+            Debug.LogWarning("⚠️ PlayerController.Instance chưa được load!");
+            return;
+        }
 
         if (Vector2.Distance(transform.position, PlayerController.Instance.transform.position) > attackRange)
         {
@@ -96,7 +110,15 @@ public class EnemyAI : MonoBehaviour
         if (attackRange != 0 && canAttack)
         {
             canAttack = false;
-            (enemyType as IEnemy).Attack();
+
+            if (enemyType != null && enemyType is IEnemy enemy)
+            {
+                enemy.Attack();
+            }
+            else
+            {
+                Debug.LogError("❌ enemyType bị null hoặc không phải là IEnemy! Hãy kiểm tra Inspector.");
+            }
 
             if (stopMovingWhileAttacking)
             {
@@ -110,7 +132,6 @@ public class EnemyAI : MonoBehaviour
             StartCoroutine(AttackCooldownRoutine());
         }
     }
-
 
     private IEnumerator AttackCooldownRoutine()
     {

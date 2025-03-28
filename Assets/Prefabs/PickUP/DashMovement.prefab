@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 8664099954684090303}
   - component: {fileID: 6641067055599287609}
   - component: {fileID: 733755169023241509}
-  - component: {fileID: 4958346884448224923}
   - component: {fileID: 4248240876205190925}
   m_Layer: 0
   m_Name: DashMovement
@@ -208,21 +207,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &4958346884448224923
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 471935670693805602}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f55baef154b83214e871563c8be9f630, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  notificationUI: {fileID: 8677948707981091103, guid: 95bbe84237853ac4a9d24ea9ad10fb47,
-    type: 3}
-  pickupSound: {fileID: 0}
 --- !u!114 &4248240876205190925
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -235,3 +219,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6f64da4225750442a4640d3b81915f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notificationUI: {fileID: 6532853035919117668, guid: 5cd1a9d98f5ff6341b849bcc6fc16547,
+    type: 3}
+  notificationText: {fileID: 3794258806160773955, guid: 67ddb95daef4dd141ae3905c1f4b928e,
+    type: 3}
+  pickupSound: {fileID: 8300000, guid: 57f55c4e59012c8438419493dcf5bf7e, type: 3}
