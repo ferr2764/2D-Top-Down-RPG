@@ -1,17 +1,17 @@
+﻿using TMPro;
 using UnityEngine;
+using UnityEngine.Playables;
 
 public class Map1Ender : MapEnder
 {
     public override void Action()
     {
-        //Open slot 2
-        var activeInv = ActiveInventory.Instance;
-        //Inventory 2 (game object)
-        var inventory2 = activeInv.transform.GetChild(1).gameObject;
-        var slot = inventory2.GetComponent<InventorySlot>();
-        slot.enabled = true;
-        //Item (game object)
-        inventory2.transform.GetChild(1).gameObject.SetActive(true);
+        PlayerController.Instance.EnableDash(); // Mở khóa Dash
+        var canvas = GameObject.FindWithTag("UI");
+        canvas.GetComponent<TextMeshProUGUI>().enabled = true;
+        Invoke("HideNotification", 2f);
+        //AudioSource.PlayClipAtPoint(pickupSound, transform.position);
+
         //Open exit
         var exit = GameObject.FindWithTag("AreaExit");
         //Enable trigger for the next map
