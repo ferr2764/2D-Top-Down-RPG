@@ -41353,12 +41353,12 @@ PrefabInstance:
     - target: {fileID: 8685088293255016887, guid: 2ff5e5466ab941645a85e15df8463638,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 15.776087
+      value: 19.383928
       objectReference: {fileID: 0}
     - target: {fileID: 8685088293255016887, guid: 2ff5e5466ab941645a85e15df8463638,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.626383
+      value: 8.616072
       objectReference: {fileID: 0}
     - target: {fileID: 8994168726381813984, guid: 2ff5e5466ab941645a85e15df8463638,
         type: 3}
@@ -43089,7 +43089,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad: LavaScene
-  sceneTransitionName: NEntry
+  sceneTransitionName: SEntry
   suppressRequirement: 0
 --- !u!61 &1240259782
 BoxCollider2D:
