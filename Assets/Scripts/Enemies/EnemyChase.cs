@@ -1,10 +1,12 @@
-﻿using UnityEngine;
+﻿
+using UnityEngine;
 
 public class EnemyChase : MonoBehaviour
 {
     public Transform player; // Nhân vật người chơi
     public float speed = 3f;
     public float detectRange = 5f;
+    public float stopDistance = 0.5f; // Khoảng cách dừng lại gần player
     public Animator animator;
     private SpriteRenderer spriteRenderer;
     private Vector2 moveDir;
@@ -35,16 +37,28 @@ public class EnemyChase : MonoBehaviour
             FindPlayer(); // 🔥 Tìm lại Player nếu bị mất khi load Scene
             return;
         }
+
         float distance = Vector2.Distance(transform.position, player.position);
 
         if (distance < detectRange)
         {
             // Tính toán hướng di chuyển
             moveDir = (player.position - transform.position).normalized;
-            transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
+
+            // Chỉ di chuyển nếu chưa đến gần player
+            if (distance > stopDistance)
+            {
+                transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
+            }
 
             // Cập nhật flip dựa trên hướng di chuyển
             UpdateAnimation();
+        }
+        else
+        {
+            // Nếu player ngoài vùng phát hiện, reset animation
+            animator.SetFloat("MoveX", 0);
+            animator.SetFloat("MoveY", 0);
         }
     }
 
