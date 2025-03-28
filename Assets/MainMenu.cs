@@ -18,4 +18,20 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadSceneAsync("Forest");
     }
+    public void Water()
+    {
+        SceneManager.LoadSceneAsync("Water");
+    }
+    public void Lava()
+    {
+        SceneManager.LoadSceneAsync("LavaScene");
+    }
+    public void Ice()
+    {
+        SceneManager.LoadSceneAsync("Ice");
+    }
+    public void SciFi()
+    {
+        SceneManager.LoadSceneAsync("Sci Fi");
+    }
 }
