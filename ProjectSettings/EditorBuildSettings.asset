@@ -14,6 +14,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LavaScene.unity
     guid: 6e422246644f2764eaaac4bd0ac5666f
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: c842924743878d64591b280d91fb9f9e
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100,
       type: 3}

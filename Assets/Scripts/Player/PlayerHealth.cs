@@ -19,6 +19,7 @@ public class PlayerHealth : Singleton<PlayerHealth>
     private Flash flash;
 
     const string HEALTH_SLIDER_TEXT = "Health Slider";
+    const string HEART_SLIDER_TEXT = "Heart Slider";
     const string TOWN_TEXT = "Scene1";
     readonly int DEATH_HASH = Animator.StringToHash("Death");
 
@@ -34,6 +35,16 @@ public class PlayerHealth : Singleton<PlayerHealth>
         if (currentHealth < maxHealth)
         {
             currentHealth += 1;
+            UpdateHealthSlider();
+        }
+    }
+    public void HealAmount(int amount)
+    {
+        var tmp = amount;
+        while (tmp > 0 && currentHealth < maxHealth)
+        {
+            currentHealth += 1;
+            tmp--;
             UpdateHealthSlider();
         }
     }
@@ -100,6 +111,10 @@ public class PlayerHealth : Singleton<PlayerHealth>
         if (healthSlider == null)
         {
             healthSlider = GameObject.Find(HEALTH_SLIDER_TEXT).GetComponent<Slider>();
+            if (healthSlider == null)
+            {
+                healthSlider = GameObject.Find(HEART_SLIDER_TEXT).GetComponent<Slider>();
+            }
         }
 
         healthSlider.maxValue = maxHealth;
