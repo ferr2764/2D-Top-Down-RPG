@@ -24,6 +24,7 @@ public class PlayerHealth : Singleton<PlayerHealth>
     const string TOWN_TEXT = "Scene1";
     readonly int DEATH_HASH = Animator.StringToHash("Death");
 
+    GameObject uiCanvas;
     protected override void Awake()
     {
         base.Awake();
@@ -85,9 +86,9 @@ public class PlayerHealth : Singleton<PlayerHealth>
     {
         if (currentHealth <= 0 && !isDead)
         {
+            UIFade.Instance.ToggleUI(false);
             isDead = true;
             Destroy(ActiveWeapon.Instance.gameObject);
-
             currentHealth = 0;
             GetComponent<Animator>().SetTrigger(DEATH_HASH);
             StartCoroutine(DeathLoadSceneRoutine());
@@ -98,7 +99,7 @@ public class PlayerHealth : Singleton<PlayerHealth>
     {
         yield return new WaitForSeconds(2f);
         Destroy(gameObject);
-        SceneManager.LoadScene("Forest");
+        SceneManager.LoadScene("DeadScene");
     }
 
     private IEnumerator DamageRecoveryRoutine()
