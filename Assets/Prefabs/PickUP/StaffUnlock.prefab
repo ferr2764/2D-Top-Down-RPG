@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8664099954684090303}
   - component: {fileID: 6641067055599287609}
   - component: {fileID: 733755169023241509}
-  - component: {fileID: 6628543253092142091}
+  - component: {fileID: 8246965011506473454}
   m_Layer: 0
   m_Name: StaffUnlock
   m_TagString: Untagged
@@ -207,7 +207,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &6628543253092142091
+--- !u!114 &8246965011506473454
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -216,6 +216,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 471935670693805602}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6f64da4225750442a4640d3b81915f5, type: 3}
+  m_Script: {fileID: 11500000, guid: 34dfaacdb93b820448024d8cd6430798, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

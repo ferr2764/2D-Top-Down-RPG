@@ -23,6 +23,8 @@ public class PlayerController : Singleton<PlayerController>
     private bool facingLeft;
     private bool isDashing;
 
+    private bool canDash = false;
+
     protected override void Awake()
     {
         base.Awake();
@@ -99,9 +101,8 @@ public class PlayerController : Singleton<PlayerController>
 
     private void Dash()
     {
-        if (!isDashing/* && Stamina.Instance.CurrentStamina > 0*/)
+        if (!isDashing && canDash)
         {
-            //Stamina.Instance.UserStamina();
             isDashing = true;
             moveSpeed *= dashSpeed;
             myTrailRenderer.emitting = true;
@@ -119,4 +120,11 @@ public class PlayerController : Singleton<PlayerController>
         yield return new WaitForSeconds(dashCD);
         isDashing = false;
     }
+
+    public void EnableDash()
+    {
+        canDash = true;
+        Debug.Log("Dash Unlocked!");
+    }
+
 }

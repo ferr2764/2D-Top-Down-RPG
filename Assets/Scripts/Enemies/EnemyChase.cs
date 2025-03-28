@@ -14,8 +14,27 @@ public class EnemyChase : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
+    void FindPlayer()
+    {
+        GameObject playerObject = GameObject.FindWithTag("PlayerExist");
+        if (playerObject != null)
+        {
+            player = playerObject.transform;
+            Debug.Log("🔥 Enemy đã tìm thấy Player!");
+        }
+        else
+        {
+            Debug.LogWarning("⚠️ Không tìm thấy Player trong Scene!");
+        }
+    }
+
     void Update()
     {
+        if (player == null)
+        {
+            FindPlayer(); // 🔥 Tìm lại Player nếu bị mất khi load Scene
+            return;
+        }
         float distance = Vector2.Distance(transform.position, player.position);
 
         if (distance < detectRange)
