@@ -21,7 +21,6 @@ public class AreaExit : MonoBehaviour
 
     private IEnumerator LoadSceneCoroutine()
     {
-        Debug.Log("Trans to " + sceneToLoad);
         while(waitToLoadTime >= 0)
         {
             waitToLoadTime -= Time.deltaTime;

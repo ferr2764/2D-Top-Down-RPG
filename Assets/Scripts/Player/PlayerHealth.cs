@@ -4,10 +4,11 @@ using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System.Threading;
 
 public class PlayerHealth : Singleton<PlayerHealth>
 {
-    public bool isDead {  get; private set; }
+    public bool isDead { get; private set; }
     [SerializeField] private int maxHealth = 3;
     [SerializeField] private float knockBackThrustAmount = 10f;
     [SerializeField] private float damageRecoveryTime = 1f;
@@ -68,7 +69,7 @@ public class PlayerHealth : Singleton<PlayerHealth>
 
     public void TakeDamage(int damageAmount, Transform hitTransform)
     {
-        if (!canTakeDamage) {return;}
+        if (!canTakeDamage) { return; }
 
         ScreenShakeManager.Instance.ShakeScreen();
         knockback.GetKnockedBack(hitTransform, knockBackThrustAmount);
@@ -95,9 +96,9 @@ public class PlayerHealth : Singleton<PlayerHealth>
 
     private IEnumerator DeathLoadSceneRoutine()
     {
-        yield return new WaitForSeconds(2f);
-        Destroy(gameObject);
-        SceneManager.LoadScene(TOWN_TEXT);
+        UIFade.Instance.Fade(1);
+        SceneManager.LoadSceneAsync("DeadScene", LoadSceneMode.Single);
+        yield return null;
     }
 
     private IEnumerator DamageRecoveryRoutine()
