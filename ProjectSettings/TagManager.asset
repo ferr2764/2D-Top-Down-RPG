@@ -7,6 +7,7 @@ TagManager:
   - AreaExit
   - UI
   - PlayerExist
+  - ButtonTag
   layers:
   - Default
   - TransparentFX
