@@ -6295,7 +6295,7 @@ GameObject:
   - component: {fileID: 610468189}
   m_Layer: 0
   m_Name: Mecha Stone
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15414,12 +15414,12 @@ PrefabInstance:
     - target: {fileID: 8685088293255016887, guid: 2ff5e5466ab941645a85e15df8463638,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.753237
+      value: -6.7438307
       objectReference: {fileID: 0}
     - target: {fileID: 8685088293255016887, guid: 2ff5e5466ab941645a85e15df8463638,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -10.384049
+      value: -10.38404
       objectReference: {fileID: 0}
     - target: {fileID: 8994168726381813984, guid: 2ff5e5466ab941645a85e15df8463638,
         type: 3}
@@ -15569,7 +15569,7 @@ GameObject:
   - component: {fileID: 1699763214}
   m_Layer: 0
   m_Name: Golem
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
