@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &7574116554532782372
 RectTransform:
   m_ObjectHideFlags: 0
@@ -88,6 +88,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: NotificationText
+      objectReference: {fileID: 0}
+    - target: {fileID: 3794258806160773955, guid: 67ddb95daef4dd141ae3905c1f4b928e,
+        type: 3}
+      propertyPath: m_text
+      value: "B\u1EA1n \u0111\xE3 \u0111\u01B0\u1EE3c n\xE2ng c\u1EA5p k\u0129 n\u0103ng
+        Dash!"
       objectReference: {fileID: 0}
     - target: {fileID: 5911059986010695480, guid: 67ddb95daef4dd141ae3905c1f4b928e,
         type: 3}
