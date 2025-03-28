@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Mecha Stone
+  m_Name: MechaStone
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -23,16 +23,16 @@ AnimationClip:
     - time: 0
       value: {fileID: 8741579856508472657, guid: 38b3b942f8f1af34393a4be9932491bd,
         type: 3}
-    - time: 0.18333334
+    - time: 0.26666668
       value: {fileID: -2279065559567515501, guid: 38b3b942f8f1af34393a4be9932491bd,
         type: 3}
-    - time: 0.36666667
+    - time: 0.51666665
       value: {fileID: 2429037235822894930, guid: 38b3b942f8f1af34393a4be9932491bd,
         type: 3}
-    - time: 0.55
+    - time: 0.75
       value: {fileID: -5688739654425014672, guid: 38b3b942f8f1af34393a4be9932491bd,
         type: 3}
-    - time: 0.73333335
+    - time: 0.96666664
       value: {fileID: -5688739654425014672, guid: 38b3b942f8f1af34393a4be9932491bd,
         type: 3}
     attribute: m_Sprite
@@ -67,7 +67,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.75
+    m_StopTime: 0.9833333
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
