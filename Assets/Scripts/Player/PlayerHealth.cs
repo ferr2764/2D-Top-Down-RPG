@@ -37,6 +37,16 @@ public class PlayerHealth : Singleton<PlayerHealth>
             UpdateHealthSlider();
         }
     }
+    public void HealAmount(int amount)
+    {
+        var tmp = amount;
+        while (tmp > 0 && currentHealth < maxHealth)
+        {
+            currentHealth += 1;
+            tmp--;
+            UpdateHealthSlider();
+        }
+    }
 
     private void Start()
     {
