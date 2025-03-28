@@ -36,7 +36,7 @@ public class AreaExit : MonoBehaviour
     public void Update()
     {
         killedAllEnemies = CheckAllKilled();
-        if(suppressRequirement ||killedAllEnemies && GotItem)
+        if(suppressRequirement ||(killedAllEnemies && GotItem))
         {
             gameObject.GetComponent<BoxCollider2D>().enabled = true;
             gameObject.transform.GetChild(0).gameObject.SetActive(true);
