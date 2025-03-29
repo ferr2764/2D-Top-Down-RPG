@@ -587,6 +587,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1652691956}
     m_Modifications:
+    - target: {fileID: 1640409152860465548, guid: 7715c670367df2b469c6a69fe1e41af8,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5885153149769728978, guid: 7715c670367df2b469c6a69fe1e41af8,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7707310726235026342, guid: 7715c670367df2b469c6a69fe1e41af8,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -2253911629886400664, guid: b231456e0f0a93e4086c5a9f82a91139,
         type: 3}
       propertyPath: m_Name
@@ -667,21 +682,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1640409152860465548, guid: 7715c670367df2b469c6a69fe1e41af8,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5885153149769728978, guid: 7715c670367df2b469c6a69fe1e41af8,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7707310726235026342, guid: 7715c670367df2b469c6a69fe1e41af8,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
@@ -5929,7 +5929,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 456060192}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -5981,8 +5981,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 647094684}
   - {fileID: 435052485}
+  - {fileID: 647094684}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &480909475
@@ -7146,7 +7146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 683674fac1f4aba4e9b690c3018861ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transitionName: NEntry
+  transitionName: SEntry
 --- !u!1001 &654127007
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -67195,7 +67195,7 @@ PrefabInstance:
     - target: {fileID: 8685088293255016887, guid: 2ff5e5466ab941645a85e15df8463638,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.7456446
+      value: -6.746873
       objectReference: {fileID: 0}
     - target: {fileID: 8685088293255016887, guid: 2ff5e5466ab941645a85e15df8463638,
         type: 3}

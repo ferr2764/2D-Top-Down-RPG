@@ -44,6 +44,6 @@ public class AreaExit : MonoBehaviour
     }
     private bool CheckAllKilled()
     {
-        return GameObject.FindWithTag("Enemy") == null;
+        return (GameObject.FindWithTag("Enemy") == null) && (GameObject.FindWithTag("Boss") == null);
     }
 }
