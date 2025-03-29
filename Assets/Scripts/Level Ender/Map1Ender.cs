@@ -43,16 +43,7 @@ public class Map1Ender : MapEnder
         }
 
         // ✅ Mở cửa ra exit
-        var exit = GameObject.FindWithTag("AreaExit");
-        if (exit != null)
-        {
-            exit.GetComponent<BoxCollider2D>().enabled = true;
-            exit.transform.GetChild(0).gameObject.SetActive(true);
-        }
-        else
-        {
-            Debug.LogError("⚠️ Lỗi: Không tìm thấy AreaExit!");
-        }
+        AreaExit.GotItem = true;
 
         // ✅ Ẩn thông báo sau 2 giây
         Invoke("HideNotification", 2f);
